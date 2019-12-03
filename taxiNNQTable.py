@@ -8,6 +8,9 @@ import matplotlib.pyplot as plt
 
 # Q-table is approximated using a NN
 # https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0
+# https://adventuresinmachinelearning.com/python-tensorflow-tutorial/
+# https://www.tensorflow.org/tutorials/keras/text_classification_with_hub
+
 
 env = gym.make("Taxi-v3").env
 
