@@ -1,7 +1,11 @@
 import gym
 import numpy as np
 import random
-#from IPython.display import clear_output
+
+# Implements Q learning 
+# The entire state space is explicitly enumerated 
+
+# https://www.learndatasci.com/tutorials/reinforcement-q-learning-scratch-python-openai-gym/
 
 env = gym.make("Taxi-v3").env
 
@@ -26,7 +30,7 @@ q_table = np.zeros([env.observation_space.n, env.action_space.n])
 # Hyperparameters
 alpha = 0.1
 gamma = 0.6
-epsilon = 0.1
+epsilon = 0.01
 
 # For plotting metrics
 all_epochs = []
